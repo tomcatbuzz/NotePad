@@ -9,12 +9,12 @@ import { NotesService } from '../services/notes.service';
 })
 export class HomePage implements OnInit {
 
-  constructor(private notesService: NotesService, private alertCtrl: AlertController, private navCtrl: NavController) {
+  constructor(public notesService: NotesService, private alertCtrl: AlertController, private navCtrl: NavController) {
 
   }
 
   ngOnInit() {
-    this.notesService.load();
+    // this.notesService.load();
   }
 
   addNote() {
